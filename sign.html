@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body{
+        height: 100vh;
+        background-image: linear-gradient(to top right,#ee9ca7 50%,#9a646b 50%);
+        animation-name: blink2;
+    
+      }
+     
+        
+    
+      form{
+        width: 750px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.276);
+        margin: 40px auto;
+        padding: 90px 60px;
+      }
+      .d-block{
+        display: block;
+        width: 100%;
+      }
+      .inp{
+        padding: 12px 10px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        margin-bottom: 12px;
+        outline: none;
+      }
+      form h1{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        color: rgb(0, 0, 0);
+        letter-spacing: 4px;
+        font-size: 40px;
+      }
+      form textarea{
+        resize:vertical;
+      }
+      form a{
+        color: black;
+        font-weight: bold;
+      }
+      form input[type="button"]{
+        border: none;
+        padding: 14px;
+        margin: 35px 0px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        font-size: 19px;
+        background-image: linear-gradient(to right,#ee9ca7 40%,#ee9ca7cf,#9a646b );
+        animation-name: blink2;
+    
+        animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-direction:alternate;
+      }
+      @keyframes blink2 {
+        to{
+          background-image: linear-gradient(to right,#9a646b,#ee9ca7cf,#ee9ca7 );
+        }
+        
+      }
+      form p{
+        text-align: center;
+      }
+      .inp::placeholder,select{
+        color: rgb(181, 179, 179);
+      }
+      </style>
+</head>
+<body>
+    <form action="">
+        <h1>create account</h1>
+        <input type="text" class="d-block inp" placeholder="Your Name">
+        <input type="email" class="d-block inp" placeholder="Your Email Address">
+        <select name="" id="" class="d-block inp">
+          <option value="">Select Your Gender</option>
+          <option value="">Male</option>
+          <option value="">Female</option>
+        </select>
+        <input type="password" class="d-block inp" placeholder="Your Password">
+        <div class="box">
+          <input type="checkbox" name="" id="">
+          I agree all statments in <a href="#">Term of Sevice</a>
+        </div>
+        <input type="button" class="d-block" value="Sign Up">
+        <p>Have already an account? Login <a href="#">here</a></p>
+      </form>
+</body>
+</html>
